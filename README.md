@@ -13,46 +13,28 @@
 算法目录：
 
 - [集合论与位运算](https://leetcode.cn/circle/discuss/CaOJ45/)
+- 前缀 和 & 差分 
+- 二分
+- 构造
 - 数据结构
-  - [单调栈 monotone_stack.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/monotone_stack.go)
-  - 单调队列 monotone_queue.go
+  - 单调栈
+  - 链表
+  - 哈希表
+  - 单调队列
     - 二维单调队列
-  - [双端队列 deque.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/deque.go)
+  - 双端队列
   - 堆（优先队列）heap.go
     - 支持修改、删除指定元素
-  - 并查集 union_find.go
-    - 点权
-    - 边权（种类）
-    - 持久化
-    - 回滚操作（动态图连通性）
   - [稀疏表（ST 表）sparse_table.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/sparse_table.go)
-  - 树状数组 fenwick_tree.go
+  - 树状数组 
     - 差分树状数组（支持区间加、区间求和）
-  - 线段树 segment_tree.go
+  - 线段树 
     - 延迟标记（懒标记）
     - 动态开点
     - 线段树合并
     - 线段树分裂
     - 持久化（主席树）
-  - [0-1 线段树 segment_tree01.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/segment_tree01.go)
-  - [左偏树（可并堆）leftist_tree.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/leftist_tree.go)
-  - [笛卡尔树 cartesian_tree.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/cartesian_tree.go)
-  - [二叉搜索树公共方法 bst.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/bst.go)
-  - [Treap treap.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/treap.go)
-  - [伸展树 splay.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/splay.go)
-  - [动态树 LCT link_cut_tree.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/link_cut_tree.go)
-  - [红黑树 red_black_tree.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/red_black_tree.go)
-  - [替罪羊树 scapegoat_tree.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/scapegoat_tree.go)
-  - [k-d 树 kd_tree.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/kd_tree.go)
-  - 珂朵莉树（ODT）
-    - [数组版 odt.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/odt.go)
-    - [平衡树版 odt_bst.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/odt_bst.go)
-  - [根号分治、分块 sqrt_decomposition.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/sqrt_decomposition.go)
-  - 莫队算法 mo.go
-    - 普通莫队
-    - 带修莫队
-    - 回滚莫队
-    - 树上莫队
+  - 二叉搜索树 & 平衡树
 - 字符串 strings.go
   - 字符串哈希
   - KMP
@@ -62,85 +44,26 @@
   - 最长回文子串
     - Manacher 算法
   - 后缀数组（SA）
-  - [后缀自动机（SAM）sam.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/sam.go)
-  - 字典树 trie.go
+  - 后缀自动机
+  - 字典树 t
     - 持久化
     - AC 自动机
-  - 异或字典树 trie01.go
+  - 异或字典树 
     - 持久化
     - Hack：构造一组数据，最大化树上的节点数
 - 数学
-  - 数论 math.go
-    - 辗转相除法（最大公因数 GCD）
-    - 类欧几里得算法 ∑⌊(ai+b)/m⌋
-    - Pollard-Rho 质因数分解算法
-    - 埃氏筛（埃拉托斯特尼筛法）
-    - 欧拉筛（线性筛）
-    - 欧拉函数
-    - 原根
-    - 扩展 GCD
-      - 二元一次不定方程
-    - 逆元
-      - 线性求逆元
-    - 中国剩余定理（CRT）
-      - 扩展中国剩余定理
-    - 离散对数
-    - 大步小步算法（BSGS）
-      - 扩展大步小步算法
-    - 二次剩余
-    - Jacobi 符号
-    - N 次剩余
-    - 卢卡斯定理
-      - 扩展卢卡斯定理
-    - 卡特兰数
-    - 默慈金数
-    - 那罗延数
-    - 斯特林数
-      - 第一类斯特林数（轮换）
-      - 第二类斯特林数（子集）
-    - 贝尔数
-    - 欧拉数
-    - 莫比乌斯函数
-    - 数论分块
-    - 杜教筛
-  - 组合数学 math_comb.go
-    - 常见模型
-    - 常用恒等式
-    - 容斥原理
-  - [快速傅里叶变换 FFT math_fft.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/math_fft.go)
-  - 快速数论变换 NTT math_ntt.go
-    - 包含多项式全家桶（求逆、开方等等）
-  - [快速沃尔什变换 FWT math_fwt.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/math_fwt.go)
-  - [连分数、佩尔方程 math_continued_fraction.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/math_continued_fraction.go)
-  - 线性代数 math_matrix.go
-    - 矩阵相关运算
-    - 高斯消元
-    - 行列式
-    - 线性基
-  - 数值分析 math_numerical_analysis.go
-    - 自适应辛普森积分
-    - 拉格朗日插值
-  - 计算几何 geometry.go
-    - 线与点
-    - 线与线
-    - 圆与点
-      - 最小圆覆盖
-        - 随机增量法
-      - 固定半径覆盖最多点
-    - 圆与线
-    - 圆与圆
-    - 圆与矩形
-    - 最近点对
-    - 多边形与点
-      - 判断点在凸多边形内 O(log n)
-      - 判断点在任意多边形内
-        - 转角法（统计绕数）
-    - 凸包
-    - 最远点对
-      - 旋转卡壳
-    - 半平面交
-  - 博弈论 games.go
-    - SG 函数
+  - 位运算
+  - 二进制集合操作
+  - 快速幂
+  - 数论
+  - 复数
+  - 组合数学
+  - 线性代数
+  - 线性规划
+  - 概率论
+  - 博弈论
+  - 数值算法
+  - 杨氏矩阵
 - 动态规划 dp.go
   - 背包
     - 0-1 背包
@@ -267,5 +190,4 @@
     - 二维前缀和
     - 二维差分
     - 离散化
-  - [杂项B misc.go](https://github.com/EndlessCheng/codeforces-go/blob/master/copypasta/misc.go)
 
