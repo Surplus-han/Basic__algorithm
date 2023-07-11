@@ -17,8 +17,8 @@
 - 二分
 - 构造
 - 数据结构
-  - 单调栈
-  - 链表
+  - [单调栈](https://github.com/Surplus-han/Basic__algorithm/blob/main/main/stack.cpp)
+  - [链表](https://github.com/Surplus-han/Basic__algorithm/blob/main/main/ListNode.py)
   - 哈希表
   - 单调队列
     - 二维单调队列
