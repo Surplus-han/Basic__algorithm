@@ -1,4 +1,4 @@
-# ¹şÏ£±í O(n)
+# O(n)
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         n = len(nums)
